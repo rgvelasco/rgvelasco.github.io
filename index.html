@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+
+<link rel="icon" type="image/x-icon" href="" />
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&display=swap" rel="stylesheet">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet">
+
+<style type="text/css">
+
+html {
+scroll-behavior: smooth;
+font-size: 16px;
+overflow-x: hidden;
+}
+
+body {
+overflow-x: hidden;
+}
+
+.container {
+max-width: 100%;
+}
+
+@media (min-width: 576px) {
+.container {
+max-width: 540px;
+}
+}
+
+@media (max-width: 576px) {
+.navbar-brand img {
+max-width: 15rem!important;
+}
+}
+
+@media (min-width: 768px) {
+.container {
+max-width: 720px;
+}
+}
+
+@media (min-width: 992px) {
+.container {
+max-width: 960px;
+}
+}
+
+@media (min-width: 1200px) {
+.container {
+max-width: 1140px;
+}
+}
+
+p, h1, h2, h3, h4, h5, small { white-space: pre-line; }
+
+@media screen and (max-width: 768px) {
+input, select, textarea {
+font-size: 16px !important;
+}
+}
+
+h1.sw-font-family-default,
+h2.sw-font-family-default {
+font-family: "Open Sans";
+}
+
+h1.sw-font-weight-default,
+h2.sw-font-weight-default {
+font-weight: 600;
+}
+
+h1.sw-text-color-default,
+h2.sw-text-color-default {
+color: #000000;
+}
+
+section.sw-font-family-default,
+header.sw-font-family-default,
+nav.sw-font-family-default,
+footer.sw-font-family-default,
+div.sw-font-family-default,
+span.sw-font-family-default,
+small.sw-font-family-default,
+pre.sw-font-family-default,
+p.sw-font-family-default,
+b.sw-font-family-default,
+li.sw-font-family-default,
+ul.sw-font-family-default,
+a.sw-font-family-default,
+h3.sw-font-family-default,
+h4.sw-font-family-default,
+h5.sw-font-family-default,
+h6.sw-font-family-default {
+font-family: "Open Sans";
+}
+
+span.sw-font-weight-default,
+li.sw-font-weight-default span,
+small.sw-font-weight-default,
+li.sw-font-weight-default small,
+pre.sw-font-weight-default,
+p.sw-font-weight-default,
+h3.sw-font-weight-default,
+h4.sw-font-weight-default,
+h5.sw-font-weight-default,
+h6.sw-font-weight-default {
+font-weight: 300;
+}
+
+span.sw-text-color-default,
+li.sw-text-color-default span,
+small.sw-text-color-default,
+li.sw-text-color-default small,
+pre.sw-text-color-default,
+p.sw-text-color-default,
+div.sw-text-color-default,
+h3.sw-text-color-default,
+h4.sw-text-color-default,
+h5.sw-text-color-default,
+h6.sw-text-color-default {
+color: #000000;
+}
+
+input.sw-font-family-default,
+textarea.sw-font-family-default {
+font-family: "Open Sans";
+}
+
+input.sw-font-weight-default,
+textarea.sw-font-weight-default {
+font-weight: 300;
+}
+
+.sw-font-family-default::-webkit-input-placeholder,
+.sw-font-family-default::-moz-placeholder,
+.sw-font-family-default:-ms-input-placeholder,
+.sw-font-family-default:-moz-placeholder {
+font-family: "Open Sans";
+}
+
+.sw-font-family-default::-webkit-input-placeholder,
+.sw-font-family-default::-moz-placeholder,
+.sw-font-family-default:-ms-input-placeholder,
+.sw-font-family-default:-moz-placeholder {
+font-weight: 300;
+}
+
+.sw-text-color-default[data-element='button'] {
+color: #ffffff;
+}
+
+.sw-background-color-default[data-element='button'] {
+background-color: #2977c9;
+}
+
+.sw-border-radius-default[data-element='button'] {
+border-radius: .25rem;
+}
+
+.sw-font-size-m { font-size: 1rem!important; } .sw-text-color-000000 { color: #000000!important; } .sw-font-family-default { } .sw-font-weight-semibold { font-weight: 600!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-display-block { display: block!important; } .sw-padding-top-6xs { padding-top: 0.5rem!important; } .sw-padding-bottom-6xs { padding-bottom: 0.5rem!important; } .sw-padding-left-6xs { padding-left: 0.5rem!important; } .sw-padding-right-xs { padding-right: 2rem!important; } @media (hover: hover) { .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } } .active\:sw-background-color-transparent:active { background-color: transparent!important; } .sw-font-size-s { font-size: 0.875rem!important; } .sw-font-weight-normal { font-weight: 400!important; } .sw-display-flex { display: flex!important; } .sw-padding-top-7xs { padding-top: 0.25rem!important; } .sw-padding-bottom-7xs { padding-bottom: 0.25rem!important; } .sw-padding-left-7xs { padding-left: 0.25rem!important; } .sw-padding-right-7xs { padding-right: 0.25rem!important; } .sw-text-color-13324b { color: #13324b!important; } .sw-width-11xs { width: 2rem!important; } .sw-margin-right-7xs { margin-right: 0.25rem!important; } .sw-margin-left-7xs { margin-left: 0.25rem!important; } .sw-text-align-left { text-align: left!important; } .sw-text-color-default { } .sw-border-radius-default { } .sw-background-color-default { } .sw-padding-left-2xs { padding-left: 1.5rem!important; } .sw-padding-right-2xs { padding-right: 1.5rem!important; } .sw-padding-top-5xs { padding-top: 0.75rem!important; } .sw-padding-bottom-5xs { padding-bottom: 0.75rem!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-text-decoration-no-underline { text-decoration: none!important; } @media (hover: hover) { .hover\:sw-box-shadow-m:hover { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)!important; } } @media (min-width: 768px) { .m\:sw-margin-left-6xs { margin-left: 0.5rem!important; } } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-width-4xs { width: 10rem!important; } .sw-text-color-ffffff { color: #ffffff!important; } .sw-background-color-9ea5b4 { background-color: #9ea5b4!important; } .sw-border-style-solid { border-style: solid!important; } .sw-border-color-9ea5b4 { border-color: #9ea5b4!important; } .sw-background-attachment-scroll { background-attachment: scroll!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-position-center { background-position: center!important; } .sw-background-size-cover { background-size: cover!important; } .home_header2-fixed-top { position: fixed; top: 0; right: 0; left: 0; z-index: 1030; box-shadow: 0 1px 7px rgba(0, 0, 0, 0.1); } #home_header2 .navbar-nav .dropdown-menu { border: 0; box-shadow: 0 1px 3px #00000014, 0 10px 40px -10px #00000059; min-width: 180px; } #home_header2 .nav-link.dropdown-toggle{ border-radius: 50%; text-align: center; line-height: 10px; display: flex; align-items: center; justify-content: center; } #home_header2 .dropdown-menu-profile { left: -148px; top: 25px; border-radius: 0; box-shadow: 0 1px 3px #00000014, 0 10px 40px -10px #00000059; border: 0; } #home_header2 .dropdown-menu-profile a{ text-decoration: none; border-bottom: 1px solid rgba(0,0,0,.15); padding: 6px 12px; } #home_header2 .dropdown-menu{ min-width: 11rem!important; } #home_header2 .nav-link.dropdown-toggle:after{ display: none; } #home_header2 .mob-menu-body .dropdown-menu-profile { border-top: 1px solid #dedede; } #home_header2 .navbar-nav .links-dropdown a { padding-left: 1.5rem !important; } #home_header2 .toggle-button{ display: none; } #home_header2 .mob-menu-header{ padding: 8px 24px; display: flex; justify-content: space-between; } #home_header2 .mob-menu-body{ height: 90%; position: relative; } #home_header2 .navigation-section{ padding: 10px 24px; } #home_header2 .navigation-section p a{ width: 100%; } #home_header2 .buttons-section{ margin: 24px; display: flex; justify-content: flex-start; } #home_header2 .navbar-nav .dropdown-menu-profile a:hover{ box-shadow: 0 1px 3px #00000014, 0 4px 5px -5px #00000059; } #home_header2 .arrow { position: absolute; right: 15px; top: 5px; display: inline-block; width: 8px; height: 8px; border-left: 2px solid #29394c; border-top: 2px solid #29394c; transform: rotate(225deg); transition: .2s linear; margin-top: 10px; } #home_header2 .link{ background: #f5f5f5; padding: 3px 10px; } #home_header2 .collapsed.link{ background: none; } #home_header2 .collapsed .arrow { transform: rotate(135deg); } #home_header2 .buttons-section button{ margin-left: 0!important; } #home_header2 .navbar-close i{ font-size: 24px; margin-top: 10px; margin-right: 3px; cursor: pointer; } #home_header2 .mob-menu-content{ display: none; } @media (max-width: 992px) { #home_header2 .buttons-section { margin-left: 24px; margin-right: 0; display: inline-block; } #home_header2 .buttons-section a { margin-right: 10px; margin-bottom: 16px; } #home_header2 .desktop-menu{ display: none; } #home_header2 .dropdown-menu-profile { box-shadow: none; } #home_header2 .dropdown-menu-profile a{ border: 0; } #home_header2 .toggle-button{ display: block; } #home_header2 .mob-menu-content{ display: block; position: fixed; z-index: 5; width: 100%; height: 100%; opacity: 0; top:0; left: 0; background: #fff; -webkit-transition: ease-in all 0.5s; transition: ease-in all 0.5s; -webkit-transform: translateX(200%); -ms-transform: translateX(200%); transform: translateX(200%); } #home_header2 .mob-menu-content.show{ display: block; opacity: 1; /*left: 0;*/ -webkit-transition: ease-in all 0.5s; transition: ease-in all 0.5s; -webkit-transform: translateX(0); -ms-transform: translateX(0); transform: translateX(0); } #home_header2 a.dropdown-item { padding-left: 1.5rem !important; } } .navbar-dark .navbar-toggler-icon { cursor: pointer; background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255, 255, 255, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; } .navbar-light .navbar-toggler-icon { cursor: pointer; background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 0, 0, 1.0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-text-color-ff4954 { color: #ff4954!important; } .sw-width-10xs { width: 3rem!important; } .sw-margin-right-2xs { margin-right: 1.5rem!important; } .sw-line-height-compact { line-height: 1!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default { } .sw-font-family-default { } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-margin-top-none { margin-top: 0rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default { } .sw-line-height-loose { line-height: 2!important; } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-padding-top-3xl { padding-top: 8rem!important; } .sw-padding-bottom-6xl { padding-bottom: 14rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-000000 { color: #000000!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-percentage-width-full { width: 100%!important; } .sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-ffffff { border-color: #ffffff!important; } .sw-border-radius-none { border-radius: 0rem!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-fixed { background-attachment: fixed!important; }
+.sw-width-3xs { width: 12rem!important; } .sw-height-3xs { height: 12rem!important; } .sw-margin-bottom-2xs { margin-bottom: 1.5rem!important; } .sw-font-size-l { font-size: 1.125rem!important; } .sw-text-color-default { } .sw-font-family-default { } .sw-font-weight-medium { font-weight: 500!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-margin-bottom-6xs { margin-bottom: 0.5rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-font-weight-default { } .sw-line-height-loose { line-height: 2!important; } .sw-display-block { display: block!important; } .sw-text-decoration-no-underline { text-decoration: none!important; } .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } .sw-cursor-pointer { cursor: pointer!important; } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-text-color-ffffff { color: #ffffff!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; } .sw-background-repeat-no-repeat { background-repeat: no-repeat!important; } .sw-background-size-cover { background-size: cover!important; } .sw-background-position-center { background-position: center!important; } .sw-background-attachment-fixed { background-attachment: fixed!important; } .sw-height-5xs { height: 8rem!important; } .sw-text-color-fdfdfd { color: #fdfdfd!important; } .sw-font-weight-normal { font-weight: 400!important; } .sw-width-7xs { width: 6rem!important; } .sw-width-5xs { width: 8rem!important; }
+.sw-border-style-none { border-style: none!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-border-color-000000 { border-color: #000000!important; } .sw-border-radius-full { border-radius: 9999rem!important; } .sw-width-4xs { width: 10rem!important; } .sw-height-4xs { height: 10rem!important; } .sw-font-size-xl { font-size: 1.25rem!important; } .sw-text-color-default { } .sw-font-family-default { } .sw-font-weight-normal { font-weight: 400!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-font-size-m { font-size: 1rem!important; } .sw-padding-bottom-4xs { padding-bottom: 1rem!important; } .sw-display-block { display: block!important; } .sw-font-weight-default { } .sw-line-height-loose { line-height: 2!important; } .sw-text-color-000000 { color: #000000!important; } .sw-width-11xs { width: 2rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-font-size-4xl { font-size: 2.25rem!important; } .sw-padding-top-none { padding-top: 0rem!important; } .sw-line-height-normal { line-height: 1.5!important; } .sw-padding-bottom-3xs { padding-bottom: 1.25rem!important; }
+.sw-font-size-m { font-size: 1rem!important; } .sw-text-color-000000 { color: #000000!important; } .sw-width-11xs { width: 2rem!important; } .sw-display-inline-block { display: inline-block!important; } .sw-min-width-6xs { min-width: 2rem!important; } .sw-margin-right-7xs { margin-right: 0.25rem!important; } .sw-text-align-center { text-align: center!important; } .sw-border-radius-s { border-radius: 0.125rem!important; } .sw-border-color-eaeff4 { border-color: #eaeff4!important; } .sw-border-style-solid { border-style: solid!important; } .sw-border-width-xs { border-width: 1px!important; } .sw-padding-right-7xs { padding-right: 0.25rem!important; } .sw-padding-left-7xs { padding-left: 0.25rem!important; } .sw-padding-top-7xs { padding-top: 0.25rem!important; } .sw-padding-bottom-7xs { padding-bottom: 0.25rem!important; } .sw-opacity-2xs { opacity: 0.8!important; } .sw-font-family-default { } .sw-font-weight-semibold { font-weight: 600!important; } .sw-line-height-loose { line-height: 2!important; } .sw-font-weight-light { font-weight: 300!important; } .sw-letter-spacing-normal { letter-spacing: 0rem!important; } .sw-padding-left-none { padding-left: 0rem!important; } @media (hover: hover) { .hover\:sw-text-decoration-no-underline:hover { text-decoration: none!important; } } .sw-background-color-ffffff { background-color: #ffffff!important; } .sw-padding-top-2xl { padding-top: 6rem!important; } .sw-padding-bottom-2xl { padding-bottom: 6rem!important; } .sw-border-top-style-none { border-top-style: none!important; } .sw-border-top-width-xs { border-top-width: 1px!important; } .sw-border-top-color-000000 { border-top-color: #000000!important; } .sw-border-bottom-style-none { border-bottom-style: none!important; } .sw-border-bottom-width-xs { border-bottom-width: 1px!important; } .sw-border-bottom-color-000000 { border-bottom-color: #000000!important; } .sw-text-color-default { } .sw-font-weight-default { } .sw-padding-top-3xs { padding-top: 1.25rem!important; } .sw-padding-bottom-none { padding-bottom: 0rem!important; } .sw-width-4xs { width: 10rem!important; }
+</style>
+
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@600&display=swap" rel="stylesheet">
+<style>
+.made-with-softr {
+position: fixed;
+z-index: 9999999;
+left: 20px;
+bottom: 20px;
+}
+
+.made-with-softr a {
+width: 125px;
+font-style: normal;
+font-weight: 600;
+font-size: 14px;
+line-height: 19px;
+box-shadow: 0 0 4px rgb(0 0 0 / 15%);
+border-radius: 4px;
+z-index: 9999999;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 6px 8px;
+color: #1f2b3f;
+background: #ffffff;
+box-sizing: content-box;
+text-decoration: none;
+font-family: 'Nunito Sans', sans-serif;
+}
+
+.made-with-softr a .made-with {
+margin-left: 2px;
+}
+
+.made-with-softr a img {
+width: 16px;
+}
+
+.made-with-softr .softr-word {
+color: #3b85db;
+}
+
+.made-with-softr .dark-theme {
+color: #ffffff;
+background: #1f2b3f;
+}
+
+.made-with-softr .dark-theme .softr-word {
+color: #ffb30b;
+}
+</style>
+
+
+
+<style>
+.sw-font-size-5xl {
+font-size: 3rem;
+}
+.sw-font-size-4xl {
+font-size: 2.25rem;
+}
+</style>
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+if($(window).width() < 768) {
+$('h1.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+$('h1.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+$('h1.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+$('h1.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+$('h1.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+$('h2.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+$('h2.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+$('h2.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+$('h2.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+$('h2.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+$('div.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+$('div.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+$('div.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+$('div.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+$('div.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+$('p.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+$('p.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+$('p.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+$('p.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+$('p.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+$('span.sw-font-size-10xl').removeClass('sw-font-size-10xl').addClass('sw-font-size-5xl');
+$('span.sw-font-size-9xl').removeClass('sw-font-size-9xl').addClass('sw-font-size-5xl');
+$('span.sw-font-size-8xl').removeClass('sw-font-size-8xl').addClass('sw-font-size-5xl');
+$('span.sw-font-size-7xl').removeClass('sw-font-size-7xl').addClass('sw-font-size-5xl');
+$('span.sw-font-size-6xl').removeClass('sw-font-size-6xl').addClass('sw-font-size-4xl');
+}
+});
+</script>
+
+
+<script>
+/** Image lineup on mobile **/
+document.addEventListener("DOMContentLoaded", function() {
+function changeImageDirectionsOnMobile() {
+var rowsWithImages = $('.row.align-items-center').has('img').toArray();
+
+var rowsWithLeftSideImages = rowsWithImages.filter(row => {
+return $(row).children().first().children().first().prop("tagName") === 'IMG';
+});
+
+rowsWithLeftSideImages.forEach(row => {
+if($(window).width() <= 768) {
+row.classList.add('flex-column-reverse')
+}
+});
+}
+if($(window).width() <= 768) {
+changeImageDirectionsOnMobile();
+}
+});
+
+/** BG Size on mobile **/
+document.addEventListener("DOMContentLoaded", function() {
+if($(window).width() <= 768) {
+var element = $('section.sw-background-size-auto, header.sw-background-size-auto');
+element.removeClass('sw-background-size-auto');
+element.css('background-size', 'cover');
+
+$('section.sw-background-attachment-fixed, header.sw-background-attachment-fixed').removeClass('sw-background-attachment-fixed');
+}
+});
+
+/** Disable zoom on mobile **/
+document.addEventListener("DOMContentLoaded", function() {
+if($(window).width() <= 768) {
+$('input.sw-font-size-s').removeClass('sw-font-size-s');
+$('textarea.sw-font-size-s').removeClass('sw-font-size-s');
+$('select.sw-font-size-s').removeClass('sw-font-size-s');
+}
+});
+
+</script>
+</head>
+
+<body>
+
+<div data-appid="17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8" class="content"><nav id="home_header2" class="home_header2-fixed-top navbar nav navbar-expand-lg navbar-light header1-bd951e0c-4cbf-4e27-a793-90235458ad92 sw-background-color-ffffff sw-padding-top-6xs sw-padding-bottom-6xs sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000"><div class="container"><!-- Logo --><a class="navbar-brand" href="/"><img class="sw-width-4xs " src="https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/20094ce9-1d09-4fa2-b593-7b12553edfe9.png" alt="Publish your designed things."></a><div class="desktop-menu text-center justify-content-end"><ul class="navbar-nav align-items-center flex-row one-button"><li class="nav-item "><a class="position-relative sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/about-us" target="" >THE CS TEAM</a><div class="border-0 dropdown-menu links-dropdown" aria-labelledby="navbarDropdown-0"></div></li><li class="nav-item "><a class="position-relative sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/training" target="" >TRAINING</a><div class="border-0 dropdown-menu links-dropdown" aria-labelledby="navbarDropdown-1"></div></li><li class="nav-item "><a class="position-relative sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/pp-knowledge-base" target="" >PP KB</a><div class="border-0 dropdown-menu links-dropdown" aria-labelledby="navbarDropdown-2"></div></li><li class="nav-item dropdown"><a class="position-relative dropdown-toggle sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="" target="" id="navbarDropdown-3" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >FEATURES</a><div class="border-0 dropdown-menu links-dropdown" aria-labelledby="navbarDropdown-3"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports">Weekly Team Stats</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/updates-and-announcements/#upcomingevents">Upcoming Events</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/customers-feedback">Positive Customer Feedback</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports">Night shift Incentives</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports/#cta3">Forms And Links</a></div></li><li class="nav-item pt-lg-0 pt-3"><a data-element="button" target="_blank" class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-semibold sw-border-radius-default sw-background-color-default sw-padding-left-2xs sw-padding-right-2xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-letter-spacing-normal sw-text-decoration-no-underline hover:sw-text-decoration-no-underline hover:sw-box-shadow-m sw-display-block m:sw-margin-left-6xs" href="https://airtable.com/shrq7kaz6I69RxGTq">CLOCK IT</a></li><li class="nav-item dropdown ml-4"><a class="nav-link dropdown-toggle profile-dropdown-toggle sw-font-size-s sw-text-color-ffffff sw-background-color-9ea5b4 sw-border-style-solid sw-border-width-xs sw-border-color-9ea5b4 sw-background-attachment-scroll sw-background-repeat-no-repeat sw-background-position-center sw-background-size-cover" style="background-image: url(https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/user_profile1.jpg);" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></a><div class="dropdown-menu dropdown-menu-profile p-0" aria-labelledby="navbarDropdown"><a target="" class="d-item d-flex justify-content-start align-items-center navigate" href="action:signout"><i class="fas fa-power-off sw-font-size-s sw-text-color-13324b sw-margin-right-7xs sw-margin-left-7xs sw-text-align-left"></i><span class="text"><span class="title sw-font-size-s sw-text-color-000000 sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-display-flex sw-padding-top-7xs sw-padding-bottom-7xs sw-padding-left-7xs sw-padding-right-7xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent">Sign Out</span></span></a></div></li></ul></div><!-- mobile toggle --><div class="toggle-button"><span class="navbar-toggler-icon"></span></div><div class="mob-menu-content"><div class="mob-menu-header"><a class="navbar-brand" href="/"><img class="sw-width-4xs " src="https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/20094ce9-1d09-4fa2-b593-7b12553edfe9.png" alt="Publish your designed things."></a><span class="navbar-close"> <i class="fa fa-fw fa-times" aria-hidden="true"></i></span></div><div class="mob-menu-body"><div class="navigation-section"><a class="link collapsed d-block sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/about-us">THE CS TEAM</a><a class="link collapsed d-block sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/training">TRAINING</a><a class="link collapsed d-block sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="/pp-knowledge-base">PP KB</a><a class="position-relative link collapsed d-block sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" data-toggle="collapse" href="#collapseExample-3" role="button" aria-expanded="false" aria-controls="collapseExample-3">FEATURES<span class="arrow"></span></a><div class="collapse" id="collapseExample-3"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports">Weekly Team Stats</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/updates-and-announcements/#upcomingevents">Upcoming Events</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/customers-feedback">Positive Customer Feedback</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports">Night shift Incentives</a><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-letter-spacing-normal sw-display-block sw-padding-top-6xs sw-padding-bottom-6xs sw-padding-left-6xs sw-padding-right-xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent dropdown-item navigate" href="/requests-and-reports/#cta3">Forms And Links</a></div></div><div class="buttons-section"><a data-element="button" target="_blank" class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-semibold sw-border-radius-default sw-background-color-default sw-padding-left-2xs sw-padding-right-2xs sw-padding-top-5xs sw-padding-bottom-5xs sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-letter-spacing-normal sw-text-decoration-no-underline hover:sw-text-decoration-no-underline hover:sw-box-shadow-m sw-display-block m:sw-margin-left-6xs" href="https://airtable.com/shrq7kaz6I69RxGTq">CLOCK IT</a></div><div class="dropdown-menu-profile mx-4"><a target="" class="d-item d-flex justify-content-start align-items-center navigate sw-font-size-s sw-text-color-000000 sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-display-flex sw-padding-top-7xs sw-padding-bottom-7xs sw-padding-left-7xs sw-padding-right-7xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent" href="action:signout"><i class="fas fa-power-off sw-font-size-s sw-text-color-13324b sw-margin-right-7xs sw-margin-left-7xs sw-text-align-left"></i><span class="text"><span class="title sw-font-size-s sw-text-color-000000 sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-display-flex sw-padding-top-7xs sw-padding-bottom-7xs sw-padding-left-7xs sw-padding-right-7xs hover:sw-text-decoration-no-underline active:sw-background-color-transparent">Sign Out</span></span></a></div></div></div></div></nav><section id="companyhistory" style="" class="feature1-dee7b1d6-699c-4bb9-8c39-bebe741a1e40 sw-background-color-ffffff sw-padding-top-3xl sw-padding-bottom-6xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-fixed "><div class="container"><div class="row align-items-center"><div class="col-lg-6 pb-5 pb-lg-0 text-center text-lg-left"><h2 class="sw-font-size-4xl sw-text-color-000000 sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">Company History</h2><p class="sw-font-size-xl sw-text-color-000000 sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-normal sw-line-height-loose ">Printypets began as a passion project. My partner and I were visiting Europe. We spent a rainy weekend in Amsterdam, riding bicycles down the picturesque canals, eating tasty waffles and pancakes, and visiting some of the most beautiful art galleries in the world, such as the Stedelijk and the Rijksmuseum.
+
+- Adam Reed (Founder and CEO)</p><!-- Features --></div><div class="col-lg-6 text-center"><img src="https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/e8ed5b3d-b3ec-4f85-9209-5e81202ae27d.png" class="sw-percentage-width-full sw-border-style-none sw-border-width-xs sw-border-color-ffffff sw-border-radius-none mx-auto d-block" alt="Our awesome features"></div></div></div></section><section id="feature-grid1" style="background-image: url(https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/d01f96a1-d977-46f1-bd51-2753c3e5a508.jpeg);" class="feature-grid2-1acb66c1-cc14-4eed-8db5-2b44e9e373d0 sw-background-color-ffffff sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 sw-background-repeat-no-repeat sw-background-size-cover sw-background-position-center sw-background-attachment-fixed "><div class="container"><!-- Header --><div class="row"><div class="col-12 text-center"><h2 class="sw-font-size-4xl sw-text-color-ffffff sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal ">We strive to deliver an awesome customer experience</h2></div></div><!-- Subheader --><div class="row gap-y text-center"><div class="col-md-4 pt-4 pb-4"><label class="sw-width-3xs sw-height-5xs sw-margin-bottom-2xs"style=" background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/0fc9fec9-446d-429f-8539-4d2effe859ff.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><h6 class="sw-font-size-l sw-text-color-ffffff sw-font-family-default sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">With A heart</h6><p class="sw-font-size-m sw-text-color-fdfdfd sw-font-family-default sw-font-weight-normal sw-line-height-loose sw-letter-spacing-normal ">We show our customers that we really do care!</p></div><div class="col-md-4 pt-4 pb-4"><label class="sw-width-7xs sw-height-5xs sw-margin-bottom-2xs"style=" background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/85d011ed-a6c6-40d1-b27b-b95f1ba1132c.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><h6 class="sw-font-size-l sw-text-color-ffffff sw-font-family-default sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">With Burning Passion</h6><p class="sw-font-size-m sw-text-color-ffffff sw-font-family-default sw-font-weight-medium sw-line-height-loose sw-letter-spacing-normal ">We have the desire to resolve every customer concerns and we show that we are extremely interested in resolving their issues</p></div><div class="col-md-4 pt-4 pb-4"><label class="sw-width-5xs sw-height-5xs sw-margin-bottom-2xs"style=" background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/89bb9650-277c-4073-a727-4f017502ab20.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><h6 class="sw-font-size-l sw-text-color-ffffff sw-font-family-default sw-font-weight-medium sw-letter-spacing-normal sw-margin-bottom-6xs">With Resolve</h6><p class="sw-font-size-m sw-text-color-ffffff sw-font-family-default sw-font-weight-medium sw-line-height-loose sw-letter-spacing-normal ">We are determined to continue providing the same level of support in each customer interaction</p></div></div></div></section><section id="team1" class="team1-20825d38-9da8-4aa5-b1cc-25d23d75b30d sw-background-color-ffffff sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row"><div class="col-12 text-center"><h2 class="sw-font-size-4xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-4xs sw-letter-spacing-normal sw-line-height-normal " >The Awesome Customer Experience Support Team</h2><p class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-none sw-padding-bottom-3xs sw-letter-spacing-normal sw-line-height-loose">Meet our support team that makes your experience better.</p></div></div><div class="row"><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/d711552a-bc6d-49cd-94aa-1d3bf9cbf5a7.png'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Adam Reed</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">Founder & CEO</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/team/U7W6VGDSN" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/596e00ee-cf6d-4f2d-8d0f-3b6432389728.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Reina Gretchen Velasco</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">Customer Service Team Manager</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/team/U7YTS971Q" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:iamreinagretchen@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/reinofash" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/6f550161-fb0d-448b-9733-275cbb884f9f.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Vannesa Esperon</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">PP Team leader</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/team/UCCK17U95" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:kei.van.0318@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/vannesa.esperon.3" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/c3ce7d6c-a6cb-490d-a9ee-67ebabfe5a8e.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Laureen Jade Bandao</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">PP Team leader</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DLGTSDLG3" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:laureenjadebandao@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/lhorin.jhade" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/89672bd0-4341-4a49-82ad-00720911532f.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Glenda Joy Flores</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/team/UQG952AS0" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:floresglendajoy@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/glenda.j.flores1" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/0be45825-6693-4566-a3ad-99482779a942.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Mayree Klaire Go</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DNVDC5BAP" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:mayreeklaireg@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/myrklrgo" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/f9dab6c6-b5e1-4783-a101-e9563ca95dfe.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Jasmin Luna</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DQ11Z5CE8" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:moonjhaz@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/moonjhaz" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/040db649-404d-4846-9c79-37157aaa3df0.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Leizl Coloso</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DQ3BDM4AK" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:lpcoloso@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/eba3a5ff-d0c6-4b40-a424-a1dbd40a3b4e.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Nikko Buela</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">SMM/CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DQPH3TXPY" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:smartnikko0823@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a><a href="https://www.facebook.com/nikko.buela.161" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-facebook-f"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/83d9c30f-6efc-4153-8d3e-2782fc1db97a.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Debby Rae San Miguel</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DQUDF0933" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:drsanmiguel@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/d21e98c2-35ac-469e-825d-6e379a117b5c.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Mary Ann Fernandez</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DR2A906JZ" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:mahaltotz@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/03b4d9d8-ff71-4790-a0d7-62afabcd8af4.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Geedeon Paul Mallari</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/DRQ6MUEKF" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:mallari.gpd@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/01711d2a-8ede-428d-a648-561a1ed8e755.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Argeline Gay Abelligos</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/D012R45RRJS" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:abelligos.argeline@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/218e87bf-9516-474a-b032-539293845b70.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Johanna Villaflores</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/D012HBL91J9" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:johannavillaflores@yahoo.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/463e06a1-cbc0-4425-93cc-ea73ee6fdb99.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Djoan Rae S. Canono</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/D012C12AFAA" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:djoancanono@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/90f1f41a-8a8c-42b2-9697-d5599243a3f9.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Shang Gimeno</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/D012HBBSXKP" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:shang.gimeno@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/6357dcd7-4f31-497e-b4d8-c4e1ce9056bf.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Rae Ann Mabeza</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/archives/D01FQDAPZJN" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:rhaemabeza@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div><div class="col-md-4 text-center pt-5"><!-- picture --><label class="mt-4 mt-sm-0 sw-border-style-none sw-border-width-xs sw-border-color-000000 sw-border-radius-full sw-width-4xs sw-height-4xs " style="background-image: url('https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/60316a86-cb1d-4094-ac80-64e09643cac8.jpeg'); background-size: cover; background-repeat: no-repeat; background-position: center;"></label><!-- name --><h5 class="sw-font-size-xl sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal ">Rea Ho</h5><!-- title --><small class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-normal sw-letter-spacing-normal sw-padding-bottom-4xs sw-display-block">CSR Tier 1</small><!-- description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-line-height-loose sw-letter-spacing-normal "></p><!-- social links --><div><a href="https://ecomstoreteam.slack.com/team/U01F9M0DLJ3" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fab fa-slack"></i></a><a href="mailto:rea.ho1024@gmail.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block"><i class="fas fa-envelope"></i></a></div></div></div></div></section><footer id="home_footer1" class="footer2-bdfbb527-5b6d-4234-866a-d36f52f4fcc1 sw-background-color-ffffff sw-padding-top-2xl sw-padding-bottom-2xl sw-border-top-style-none sw-border-top-width-xs sw-border-top-color-000000 sw-border-bottom-style-none sw-border-bottom-width-xs sw-border-bottom-color-000000 "><div class="container"><div class="row"><div class="col-12 col-md-5 "><!-- Logo --><a href="/"><img class="sw-width-4xs "src="https://softr-prod.imgix.net/applications/17c4ddeb-6e83-4ea9-ab46-f48fff93e4a8/assets/9791fc97-b95d-417d-a88c-367540b3425a.png"alt="Publish your designed things."></a><!-- Description --><p class="sw-font-size-m sw-text-color-default sw-font-family-default sw-font-weight-default sw-padding-top-3xs sw-padding-bottom-none sw-line-height-loose ">The content of this portal or any files transmitted with it are confidential and intended solely for the use of Printypets only. It is strictly forbidden to share any part of this portal with any third party, without any form of consent from the owner. If you are not part of Printypets or APR Ecommerce Ltd., you should not disseminate, distribute or copy this portal.
+
+©APR eCommerce Limited. All Rights Reserved</p></div><!-- Link Groups --><div class="pt-4 pt-md-0 col-6 col-md-3 offset-md-1"><h6 class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-line-height-loose ">About Us</h6><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/about-us/#companyhistory">Company History</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="">Who We Are</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/#missionvission">Mission And Vision</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/#ourvalues">Our Values</a></div></div><div class="pt-4 pt-md-0 col-6 col-md-3 "><h6 class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-semibold sw-line-height-loose ">Feature</h6><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/requests-and-reports">Weekly Team Stats</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/updates-and-announcements/#upcomingevents">Upcoming Events</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/customers-feedback">Customer Feedback</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/requests-and-reports/#cta2">Night shift Incentives</a></div><div class="nav flex-column"><a target="" class="sw-font-size-m sw-text-color-000000 sw-font-family-default sw-font-weight-light sw-letter-spacing-normal sw-padding-left-none sw-padding-top-7xs sw-padding-bottom-7xs hover:sw-text-decoration-no-underline" href="/requests-and-reports/#cta3">Forms And Links</a></div></div></div><!-- Social Icons --><div class="row"><div class="col-12"><div class="text-left pt-4 pt-sm-2"><!-- ToDo Styles --><a href="https://www.facebook.com/printypets" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block sw-min-width-6xs sw-margin-right-7xs sw-text-align-center sw-border-radius-s sw-border-color-eaeff4 sw-border-style-solid sw-border-width-xs sw-padding-right-7xs sw-padding-left-7xs sw-padding-top-7xs sw-padding-bottom-7xs sw-opacity-2xs"><i class="fab fa-facebook-f"></i></a><!-- ToDo Styles --><a href="https://www.instagram.com/printypets" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block sw-min-width-6xs sw-margin-right-7xs sw-text-align-center sw-border-radius-s sw-border-color-eaeff4 sw-border-style-solid sw-border-width-xs sw-padding-right-7xs sw-padding-left-7xs sw-padding-top-7xs sw-padding-bottom-7xs sw-opacity-2xs"><i class="fab fa-instagram"></i></a><!-- ToDo Styles --><a href="mailto:support@printypets.com" target="_blank" class="sw-font-size-m sw-text-color-000000 sw-width-11xs sw-display-inline-block sw-min-width-6xs sw-margin-right-7xs sw-text-align-center sw-border-radius-s sw-border-color-eaeff4 sw-border-style-solid sw-border-width-xs sw-padding-right-7xs sw-padding-left-7xs sw-padding-top-7xs sw-padding-bottom-7xs sw-opacity-2xs"><i class="fas fa-envelope"></i></a></div></div></div></div></footer></div>
+
+<script>
+(() => {
+function rgb2hex(orig) {
+var rgb = orig.replace(/\s/g, "").match(/^rgba?\((\d+),(\d+),(\d+)/i);
+return rgb && rgb.length === 4
+? "#" +
+("0" + parseInt(rgb[1], 10).toString(16)).slice(-2) +
+("0" + parseInt(rgb[2], 10).toString(16)).slice(-2) +
+("0" + parseInt(rgb[3], 10).toString(16)).slice(-2)
+: orig;
+}
+
+function lightOrDark(color) {
+// Variables for red, green, blue values
+var r, g, b, hsp;
+
+// Check the format of the color, HEX or RGB?
+if (color.match(/^rgb/)) {
+// If RGB --> store the red, green, blue values in separate variables
+color = color.match(
+/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/
+);
+
+r = color[1];
+g = color[2];
+b = color[3];
+} else {
+// If hex --> Convert it to RGB: http://gist.github.com/983661
+color = +(
+"0x" + color.slice(1).replace(color.length < 5 && /./g, "$&$&")
+);
+
+r = color >> 16;
+g = (color >> 8) & 255;
+b = color & 255;
+}
+
+// HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html
+hsp = Math.sqrt(0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b));
+
+// Using the HSP value, determine whether the color is light or dark
+if (hsp > 127.5) {
+return "light";
+} else {
+return "dark";
+}
+}
+
+function createBudgetWrapperDivEl() {
+const divEl = document.createElement("div");
+divEl.setAttribute("class", "made-with-softr");
+
+divEl.innerHTML = `
+<a href="https://www.softr.io/?utm_source=madewithbadge" target="_blank" title="Softr - Build a website, web app or portal on Airtable without code">
+<img src="https://softr-assets-eu-shared.s3.eu-central-1.amazonaws.com/studio/blocks/assets/softr_made_with_badge_logo_small.svg" alt="Softr - Build a website, web app or portal on Airtable without code">
+<span class="made-with">Made with</span>
+<span class="softr-word">Softr</span>
+</a>`;
+document.body.appendChild(divEl);
+}
+
+function isInCurrentSection(elTop, elBottom) {
+const innerHeight = window.innerHeight - 30;
+return elTop < innerHeight && elBottom > innerHeight;
+}
+
+function setRightTheme(sections, softrEl) {
+sections.forEach(item => {
+const elementTop = item.getBoundingClientRect().top;
+const elementBottom = item.getBoundingClientRect().bottom;
+
+if (isInCurrentSection(elementTop, elementBottom)) {
+const documentBodyColor = window
+.getComputedStyle(item)
+.getPropertyValue("background-color");
+
+const bgColor = lightOrDark(rgb2hex(documentBodyColor));
+
+if (bgColor === "light") {
+softrEl.classList.add("dark-theme");
+} else {
+softrEl.classList.remove("dark-theme");
+}
+}
+});
+}
+
+function init() {
+const madeWithSoftrEl = document.querySelector(".made-with-softr");
+
+if (madeWithSoftrEl) {
+madeWithSoftrEl.remove();
+}
+
+createBudgetWrapperDivEl();
+const headers = document.querySelectorAll("header");
+const sections = document.querySelectorAll("section");
+const footers = document.querySelectorAll("footer");
+const softrEl = document.querySelector(".made-with-softr a");
+const allSections = [...headers, ...sections, ...footers];
+setRightTheme(allSections, softrEl);
+
+document.addEventListener("scroll", () => {
+setRightTheme(allSections, softrEl);
+});
+}
+
+init();
+setInterval(() => init(), 50 * 1000);
+})();
+</script>
+
+<!-- Scripts -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+<script type="text/javascript">
+;(function () { $('.navbar-toggler-icon').click(function () { $('.mob-menu-content').toggleClass('show'); }); $('.navbar-close').click(function () { $('.mob-menu-content').toggleClass('show'); }); oneButtonView($(window)); $(window).on('resize', function () { var win = $(this); oneButtonView(win) }); /* close the mobile menu */ $('.mob-menu-body a').click(function () { if($(this).attr('aria-controls')) { return; } $('.mob-menu-content').toggleClass('show'); }); var bgColor = window.getComputedStyle(document.querySelector('nav#home_header2'), null).getPropertyValue('background-color'); if (lightOrDark(bgColor) === 'dark') { $('nav#home_header2').removeClass('navbar-light'); $('nav#home_header2').addClass('navbar-dark'); $('#home_header2 .navbar-close i').css('color', '#ffffff'); $('#home_header2 .arrow').css('border-left', '2px solid #ffffff'); $('#home_header2 .arrow').css('border-top', '2px solid #ffffff'); } profileIconSizeCalculation(); $('#home_header2 a.dropdown-item').hover(function () { $(this).css('background-color', bgColor); }); $('#home_header2 .navbar-nav .dropdown-menu').css('background-color', bgColor); $('#home_header2 .mob-menu-content').css('background-color', bgColor); $('#home_header2 .link').css('background-color', bgColor); function lightOrDark(color) { /* Variables for red, green, blue values */ var r, g, b, hsp; /* Check the format of the color, HEX or RGB? */ if (color.match(/^rgb/)) { /* If HEX --> store the red, green, blue values in separate variables */ color = color.match(/^rgba?\((\d+),\s*(\d+),\s*(\d+)(?:,\s*(\d+(?:\.\d+)?))?\)$/); r = color[1]; g = color[2]; b = color[3]; } else { /* If RGB --> Convert it to HEX: http://gist.github.com/983661 */ color = +("0x" + color.slice(1).replace( color.length < 5 && /./g, '$&$&')); r = color >> 16; g = color >> 8 & 255; b = color & 255; } /* HSP (Highly Sensitive Poo) equation from http://alienryderflex.com/hsp.html */ hsp = Math.sqrt( 0.299 * (r * r) + 0.587 * (g * g) + 0.114 * (b * b) ); /* Using the HSP value, determine whether the color is light or dark */ if (hsp > 127.5) { return 'light'; } else { return 'dark'; } } function oneButtonView(win) { if (win.width() <= 414) { if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('one-button')) { $('.desktop-menu').hide(); $('.toggle-button').show(); } } if (win.width() <= 992 && win.width() > 414) { if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('one-button')) { $('.desktop-menu').show(); $('.toggle-button').hide(); } } if (win.width() <= 992) { if ($('.navbar-nav').hasClass('empty-links') && $('.navbar-nav').hasClass('empty-buttons')) { $('.desktop-menu').show(); $('.toggle-button').hide(); } } } function signout() { deleteCookie('jwtToken'); window.location.href = '/'; } function deleteCookie(name) { document.cookie = name + "=; expires=Thu, 01 Jan 1970 00:00:00 UTC"; } function profileIconSizeCalculation(){ const headerLinks = document.querySelector('nav#home_header2 .nav-item a'); if(!headerLinks) { return; } const fSize = window.getComputedStyle(headerLinks, null).getPropertyValue('font-size'); if(fSize <= '16px'){ $('#home_header2 .nav-item.dropdown a.profile-dropdown-toggle').css({ 'width': '24px', 'height': '24px', }); } else if(fSize > '16px' && fSize <= '24px') { $('#home_header2 .nav-item.dropdown a.profile-dropdown-toggle').css({ 'width': '30px', 'height': '30px', }); }else { $('#home_header2 .nav-item.dropdown a.profile-dropdown-toggle').css({ 'width': '34px', 'height': '34px', }); } } $("a[href='action:signout']").click(function(event) { event.preventDefault(); signout(); }); })();
+
+
+
+</script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/iframe-resizer/4.2.11/iframeResizer.contentWindow.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
